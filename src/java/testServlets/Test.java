@@ -20,15 +20,15 @@ import logic.Patronymic;
 public class Test {
 
     public static void main(String[] args) throws MalformedURLException, IOException {
-        
-        testColor();   
-        testAge();   
-        testBankCard();   
-        
-        testZvanie();   
-        testIp("v4");   
-        testIp("v6");   
-        testTime();   
+
+        testColor();
+        testAge();
+        testBankCard();
+
+        testZvanie();
+        testIp("v4");
+        testIp("v6");
+        testTime();
 
         testPIN();
         testSNILS();
@@ -38,7 +38,7 @@ public class Test {
         testName();
         testPatronymic();
         testFIO();
-        
+
         testBankName();
         testMaritalStatus();
         testRelationDegree();
@@ -72,6 +72,58 @@ public class Test {
         testContractor();
         testSeriaNumPas();
         testOGRN();
+        testZagranPasport();
+        testKPP();
+        testCadastr();
+        testKemVidan();
+        testKoment();
+        testKodPodrazdel();
+        testOGRNWithParam();
+        testDrive();
+        testOKPO();
+        testWorkBook();
+        testNumberTC();
+        testDate();
+        testSex();
+        testStreet();
+        testCustomString();
+        testOrganazeForma();
+        testBC();
+        testIndex();
+        testCustomOption("a,b,c,d,e,f,g,h");
+        testEducationQualif();
+    }
+
+    private static void testWorkBook() {
+        print("GetWorkBook");
+    }
+
+    private static void testOKPO() {
+        print("GetOKPO");
+    }
+
+    private static void testDrive() {
+        print("GetDrivePas");
+    }
+
+    private static void testKodPodrazdel() {
+        print("GetKodPodrazdelenia");
+    }
+
+    private static void testKoment() {
+        print("GetKoment");
+    }
+
+    private static void testKemVidan() {
+        print("GetKemVidan");
+    }
+
+    private static void testCadastr() {
+        print("GetCadastr");
+    }
+
+    private static void testKPP() {
+        print("GetKpp");
     }
 
     private static void testColor() {
@@ -88,13 +140,14 @@ public class Test {
         TestServlet servlet = new TestServlet(servletName);
         servlet.addParametr("beginYear", "1995");
         servlet.addParametr("endYear", "2016");
-        
+
         servlet.print();
     }
 
     private static void testBankCard() {
-       print("GetBankCard");  
+        print("GetBankCard");
     }
+
     private static void testZvanie() {
         print("GetZvanie");
     }
@@ -106,8 +159,40 @@ public class Test {
         servlet.print();
     }
 
+    private static void testOGRNWithParam() {
+        String face = "юр.лицо";
+        String servletName = "GetOGRNWithParametrs";
+        TestServlet servlet = new TestServlet(servletName);
+        servlet.addParametr("face", face);
+        servlet.print();
+        face = "ип";
+        servlet = new TestServlet(servletName);
+        servlet.addParametr("face", face);
+        servlet.print();
+    }
+
+    private static void testNumberTC() {
+        String tc = "автомобиль";
+        String servletName = "GetRegisterNumTC";
+        TestServlet servlet = new TestServlet(servletName);
+        servlet.addParametr("tc", tc);
+        servlet.print();
+        tc = "мотоцикл";
+        servlet = new TestServlet(servletName);
+        servlet.addParametr("tc", tc);
+        servlet.print();
+        tc = "автобус";
+        servlet = new TestServlet(servletName);
+        servlet.addParametr("tc", tc);
+        servlet.print();
+    }
+
     private static void testTime() {
         print("GetTime");
+    }
+
+    private static void testZagranPasport() {
+        print("GetRandomZagranPasport");
     }
 
     private static void testPIN() {
@@ -117,78 +202,90 @@ public class Test {
     private static void testSNILS() {
         print("GetSNILS");
     }
+
     private static void testNational() {
         print("GetNational");
     }
+
     private static void testCitizenship() {
         print("GetCitizenship");
     }
+
     private static void testEducation() {
         print("GetEducationStatus");
     }
-    
-    private static void testLocality(){
+
+    private static void testLocality() {
         print("GetTypeLocality");
     }
-    private static void testCvv(){
+
+    private static void testCvv() {
         print("GetCvv");
     }
-    private static void testMarkTC(){
+
+    private static void testMarkTC() {
         print("GetMarkTC");
     }
-    private static void testFormTC(){
+
+    private static void testFormTC() {
         print("GetFormTC");
     }
-    private static void testPropertyType(){
+
+    private static void testPropertyType() {
         print("GetPropertyType");
     }
-    
-    private static void testWorship(){
+
+    private static void testWorship() {
         print("GetWorship");
     }
-    private static void testPropertyRights(){
+
+    private static void testPropertyRights() {
         print("GetPropertyRights");
     }
-    private static void testMaterialWall ()
-    {
+
+    private static void testMaterialWall() {
         print("GetMaterialWall");
     }
-    private static void testStateApartment ()
-    {
+
+    private static void testStateApartment() {
         print("GetStateApartment");
     }
-    private static void testMetal(){
+
+    private static void testMetal() {
         print("getMetal");
     }
-    private static void testTypeBankCard(){
+
+    private static void testTypeBankCard() {
         print("GetTypeBankCard");
     }
-     private static void testUnit(){
+
+    private static void testUnit() {
         print("GetRandomUnit");
     }
-     
-     private static void testLivingRight(){
-         print("GetLivingRight");
-     }
-     private static void testAppointment(){
-         print("GetAppointment");
-     }
-     
-     private static void testTypeDoc(){
-         print("GetTypeDoc");
-     }
-     
-     private static void testContractor(){
-         print("GetContractor");
-     }
-     
-      private static void testSeriaNumPas(){
-         print("GetRandomSerialNumberPasport");
-     }
-      
-      private static void testOGRN(){
-         print("GetOGRN");
-     }
+
+    private static void testLivingRight() {
+        print("GetLivingRight");
+    }
+
+    private static void testAppointment() {
+        print("GetAppointment");
+    }
+
+    private static void testTypeDoc() {
+        print("GetTypeDoc");
+    }
+
+    private static void testContractor() {
+        print("GetContractor");
+    }
+
+    private static void testSeriaNumPas() {
+        print("GetRandomSerialNumberPasport");
+    }
+
+    private static void testOGRN() {
+        print("GetOGRN");
+    }
 
     private static void testAcc() {
         print("GetAccount");
@@ -229,7 +326,7 @@ public class Test {
         servlet.addParametr("sex", "famale");
         servlet.print();
     }
-    
+
     private static void testBankName() {
         print("GetBankName");
     }
@@ -258,7 +355,8 @@ public class Test {
     }
 
     private static void testRegion() {
-       print("GetRegion");}
+        print("GetRegion");
+    }
 
     private static void testPhoneNumber() {
         TestServlet servlet = new TestServlet("GetPhoneNumber");
@@ -279,4 +377,55 @@ public class Test {
         servlet.addParametr("abbreviature", "rus");
         servlet.print();
     }
+    private static void testDate() {
+        TestServlet servlet = new TestServlet("GetDate");
+        servlet.addParametr("maska", "dd.MM.yyyy");
+        servlet.addParametr("day", "завтра");
+        servlet.addParametr("addDay", "2");
+        servlet.print();
+    }
+
+    private static void testSex() {
+        TestServlet servlet = new TestServlet("GetSex");
+        servlet.addParametr("language", "Татарский");
+        servlet.print();
+    }
+
+    private static void testStreet() {
+        TestServlet servlet = new TestServlet("GetStreet");
+        servlet.addParametr("city", "Самара");
+        servlet.print();
+    }
+
+    private static void testCustomString() {
+        TestServlet servlet = new TestServlet("GetCustomString");
+        servlet.addParametr("chars", "врцшгчсдвг");
+        servlet.addParametr("length", "6");
+        servlet.print();
+    }
+
+    private static void testOrganazeForma() {
+        TestServlet servlet = new TestServlet("GetOrganazeForma");
+        servlet.addParametr("abbreviatura", "ОАО");
+        servlet.print();
+    }
+
+    private static void testBC() {
+        print("GetBC");
+    }
+
+    private static void testIndex() {
+        print("GetIndex");
+    }
+
+    private static void testCustomOption(String pull) {
+        TestServlet servlet = new TestServlet("GetOption");
+        servlet.addParametr("pull", pull);
+        servlet.print();
+    }
+
+    private static void testEducationQualif() {
+        print("GetEducationQualif");
+    }
+
 }

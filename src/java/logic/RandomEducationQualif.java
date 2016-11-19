@@ -11,11 +11,11 @@ import java.util.Random;
  *
  * @author Александр
  */
-public class RandomEducation {
-     private Random random = new Random();
+public class RandomEducationQualif {
+    private Random random = new Random();
      
-     public String getRandomEducation(){
-      String [] education={"высшее", "среднее", "дошкольное", "начальное общее", "основное общее", "среднее общее","среднее профессиональное"};
+     public String getRandomEducationQualif(){
+      String [] education={"бакалавр", "специалиcn", "магистр"};
       return education[random.nextInt(education.length)];
      }
 }

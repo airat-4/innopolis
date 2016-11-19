@@ -33,6 +33,46 @@
         <servlet-class>servlets.GetTime</servlet-class>
     </servlet>
     <servlet>
+        <servlet-name>GetDate</servlet-name>
+        <servlet-class>servlets.GetDate</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetSex</servlet-name>
+        <servlet-class>servlets.GetSex</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetStreet</servlet-name>
+        <servlet-class>servlets.GetStreet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetCustomString</servlet-name>
+        <servlet-class>servlets.GetCustomString</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetOrganazeForma</servlet-name>
+        <servlet-class>servlets.GetOrganazeForma</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetEducationQualif</servlet-name>
+        <servlet-class>servlets.GetEducationQualif</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetDate</servlet-name>
+        <url-pattern>/GetDate</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetStreet</servlet-name>
+        <url-pattern>/GetStreet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetCustomString</servlet-name>
+        <url-pattern>/GetCustomString</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetOrganazeForma</servlet-name>
+        <url-pattern>/GetOrganazeForma</url-pattern>
+    </servlet-mapping>
+    <servlet>
         <servlet-name>GetLanguage</servlet-name>
         <servlet-class>servlets.GetLanguage</servlet-class>
     </servlet>
@@ -48,7 +88,6 @@
         <servlet-name>GetPatronymic</servlet-name>
         <servlet-class>servlets.GetPatronymic</servlet-class>
     </servlet>
-    
     <servlet>
         <servlet-name>GetFIO</servlet-name>
         <servlet-class>servlets.GetFIO</servlet-class>
@@ -181,9 +220,78 @@
         <servlet-name>GetOGRN</servlet-name>
         <servlet-class>servlets.GetOGRN</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetRandomZagranPasport</servlet-name>
+        <servlet-class>servlets.GetRandomZagranPasport</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetKpp</servlet-name>
+        <servlet-class>servlets.GetKpp</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetCadastr</servlet-name>
+        <servlet-class>servlets.GetCadastr</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetKemVidan</servlet-name>
+        <servlet-class>servlets.GetKemVidan</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetKoment</servlet-name>
+        <servlet-class>servlets.GetKoment</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetKodPodrazdelenia</servlet-name>
+        <servlet-class>servlets.GetKodPodrazdelenia</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetOGRNWithParametrs</servlet-name>
+        <servlet-class>servlets.GetOGRNWithParametrs</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetDrivePas</servlet-name>
+        <servlet-class>servlets.GetDrivePas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetOKPO</servlet-name>
+        <servlet-class>servlets.GetOKPO</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetWorkBook</servlet-name>
+        <servlet-class>servlets.GetWorkBook</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetOption</servlet-name>
+        <servlet-class>servlets.GetOption</servlet-class>
+        <url-pattern>servlets.GetOption</url-pattern>
+    </servlet>
+    <servlet>
+        <servlet-name>GetRegisterNumTC</servlet-name>
+        <servlet-class>servlets.GetRegisterNumTC</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetBC</servlet-name>
+        <servlet-class>servlets.GetBC</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>GetIndex</servlet-name>
+        <servlet-class>servlets.GetIndex</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>GetColor</servlet-name>
         <url-pattern>/GetColor</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetBC</servlet-name>
+        <url-pattern>/GetBC</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetIndex</servlet-name>
+        <url-pattern>/GetIndex</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetOption</servlet-name>
+        <url-pattern>/GetOption</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>GetAge</servlet-name>
@@ -361,7 +469,58 @@
         <servlet-name>GetOGRN</servlet-name>
         <url-pattern>/GetOGRN</url-pattern>
     </servlet-mapping>
-
+    <servlet-mapping>
+        <servlet-name>GetRandomZagranPasport</servlet-name>
+        <url-pattern>/GetRandomZagranPasport</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetKpp</servlet-name>
+        <url-pattern>/GetKpp</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetCadastr</servlet-name>
+        <url-pattern>/GetCadastr</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetKemVidan</servlet-name>
+        <url-pattern>/GetKemVidan</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetKoment</servlet-name>
+        <url-pattern>/GetKoment</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetKodPodrazdelenia</servlet-name>
+        <url-pattern>/GetKodPodrazdelenia</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetOGRNWithParametrs</servlet-name>
+        <url-pattern>/GetOGRNWithParametrs</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetDrivePas</servlet-name>
+        <url-pattern>/GetDrivePas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetOKPO</servlet-name>
+        <url-pattern>/GetOKPO</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetWorkBook</servlet-name>
+        <url-pattern>/GetWorkBook</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetRegisterNumTC</servlet-name>
+        <url-pattern>/GetRegisterNumTC</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetSex</servlet-name>
+        <url-pattern>/GetSex</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetEducationQualif</servlet-name>
+        <url-pattern>/GetEducationQualif</url-pattern>
+    </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>
     </session-config>
