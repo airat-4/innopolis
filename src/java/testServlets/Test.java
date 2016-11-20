@@ -92,8 +92,11 @@ public class Test {
         testIndex();
         testCustomOption("a,b,c,d,e,f,g,h");
         testEducationQualif();
+        testBIK();
     }
-
+private static void testBIK() {
+        print("GetBIK");
+    }
     private static void testWorkBook() {
         print("GetWorkBook");
     }

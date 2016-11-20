@@ -56,6 +56,10 @@
         <servlet-name>GetEducationQualif</servlet-name>
         <servlet-class>servlets.GetEducationQualif</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>GetBIK</servlet-name>
+        <servlet-class>servlets.GetBIK</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>GetDate</servlet-name>
         <url-pattern>/GetDate</url-pattern>
@@ -520,6 +524,10 @@
     <servlet-mapping>
         <servlet-name>GetEducationQualif</servlet-name>
         <url-pattern>/GetEducationQualif</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>GetBIK</servlet-name>
+        <url-pattern>/GetBIK</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>30</session-timeout>
